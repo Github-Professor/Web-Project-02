@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="RegistrationMasterPage.master.cs" Inherits="Web_Project_02.RegistrationMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p>
+                </p>
+            </asp:ContentPlaceHolder>
+        </div>
+        <p class="auto-style1">
+            <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Names="Segoe UI" Font-Size="30px" Font-Underline="True" ForeColor="#2B255A" Text="Registration Form"></asp:Label>
+        </p>
+        <p class="auto-style1">
+            <asp:Label ID="Label2" runat="server" Font-Names="Consolas" Font-Size="20px" ForeColor="#412F6F" Text="Farmer Name*:"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
+        </p>
+        <p class="auto-style1">
+            <asp:Label ID="Label3" runat="server" Font-Names="Consolas" Font-Size="20px" ForeColor="#412F6F" Text="Age*:"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="txtAge" runat="server"></asp:TextBox>
+        </p>
+        <p class="auto-style1">
+            <asp:Label ID="Label4" runat="server" Font-Names="Consolas" Font-Size="20px" ForeColor="#412F6F" Text="District*:"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="txtDistrict" runat="server"></asp:TextBox>
+        </p>
+        <p class="auto-style1">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Label ID="Label5" runat="server" Font-Names="Consolas" Font-Size="20px" ForeColor="#412F6F" Text="National ID Number :"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="txtNationalID" runat="server"></asp:TextBox>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Label ID="lblError" runat="server" ForeColor="Red"></asp:Label>
+        </p>
+        <p class="auto-style1">
+&nbsp;<asp:Label ID="Label6" runat="server" Font-Names="Consolas" Font-Size="20px" ForeColor="#412F6F" Text="Mobile*:"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="txtMobile" runat="server"></asp:TextBox>
+        </p>
+        <p class="auto-style1">
+            <asp:Label ID="Label7" runat="server" Font-Names="Consolas" Font-Size="20px" ForeColor="#412F6F" Text="Password :"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
+        </p>
+        <p class="auto-style1">
+            <asp:Label ID="Label8" runat="server" Font-Names="Consolas" Font-Size="20px" ForeColor="#412F6F" Text="Confirm Password :"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="txtConfirmPassword" runat="server"></asp:TextBox>
+        </p>
+        <p class="auto-style1">
+            <asp:Button ID="Button1" runat="server" Font-Bold="True" Font-Italic="False" Font-Names="Segoe UI" Font-Size="20px" ForeColor="#2B255A" OnClick="Button1_Click" Text="Register" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="Button2" runat="server" Font-Bold="True" Font-Italic="False" Font-Names="Segoe UI" Font-Size="20px" ForeColor="#2B255A" OnClick="Button2_Click" Text="Reset" />
+        </p>
+        <p class="auto-style1">
+            <asp:Label ID="lblError1" runat="server" Font-Bold="True" Font-Size="20px" ForeColor="Red"></asp:Label>
+        </p>
+        <p class="auto-style1">
+            <asp:HyperLink ID="HyperLink1" runat="server">👉 See Registered Farmers</asp:HyperLink>
+            <asp:LinkButton ID="LinkButton1" runat="server">Click Here</asp:LinkButton>
+        </p>
+        <p class="auto-style1">
+            &nbsp;</p>
+    </form>
+</body>
+</html>
