@@ -187,6 +187,7 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="ViewGraphReports.aspx" />
     <Content Include="ViewReports.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -300,6 +301,13 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ViewGraphReports.aspx.cs">
+      <DependentUpon>ViewGraphReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewGraphReports.aspx.designer.cs">
+      <DependentUpon>ViewGraphReports.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewReports.aspx.cs">
       <DependentUpon>ViewReports.aspx</DependentUpon>

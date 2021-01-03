@@ -8,7 +8,9 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div style="text-align: center">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Names="Book Antiqua" Font-Size="20pt" ForeColor="#336600" Text="Percentage of Fruits"></asp:Label>
         </div>
     </form>
 </body>
