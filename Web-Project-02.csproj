@@ -145,6 +145,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="GoogleMap.aspx" />
     <Content Include="kells.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="LogKells.aspx" />
@@ -236,6 +237,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GoogleMap.aspx.cs">
+      <DependentUpon>GoogleMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GoogleMap.aspx.designer.cs">
+      <DependentUpon>GoogleMap.aspx</DependentUpon>
     </Compile>
     <Compile Include="kells.aspx.cs">
       <DependentUpon>kells.aspx</DependentUpon>
