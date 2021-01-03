@@ -5,6 +5,9 @@
     <p>
         <br />
     </p>
+<p>
+            <asp:Label ID="Label7" runat="server" Font-Names="Consolas" Font-Size="20px" ForeColor="#412F6F" Text="Tell us something about your harvest,"></asp:Label>
+    </p>
     <p>
             <asp:Label ID="Label3" runat="server" Font-Names="Consolas" Font-Size="20px" ForeColor="#412F6F" Text="Firstname :"></asp:Label>
     </p>
@@ -17,6 +20,31 @@
     <p>
         <asp:TextBox ID="txtDetails" runat="server" Height="160px" TextMode="MultiLine" Width="628px"></asp:TextBox>
     </p>
+    <p>
+            <asp:Label ID="Label8" runat="server" Font-Names="Consolas" Font-Size="20px" ForeColor="#412F6F" Text="Vegetables,"></asp:Label>
+    </p>
+    <p>
+            <asp:Label ID="Label9" runat="server" Font-Names="Consolas" Font-Size="20px" ForeColor="#412F6F" Text="Pumpkin :"></asp:Label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="txtVeg1" runat="server" TextMode="Number"></asp:TextBox>
+    </p>
+    <p>
+            <asp:Label ID="Label10" runat="server" Font-Names="Consolas" Font-Size="20px" ForeColor="#412F6F" Text="Green Chilli :"></asp:Label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="txtVeg2" runat="server" TextMode="Number"></asp:TextBox>
+    </p>
+    <p>
+            <asp:Label ID="Label11" runat="server" Font-Names="Consolas" Font-Size="20px" ForeColor="#412F6F" Text="Carrot :"></asp:Label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="txtVeg3" runat="server" TextMode="Number"></asp:TextBox>
+    </p>
+    <p>
+            <asp:Label ID="Label12" runat="server" Font-Names="Consolas" Font-Size="20px" ForeColor="#412F6F" Text="Onion :"></asp:Label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="txtVeg4" runat="server" TextMode="Number"></asp:TextBox>
+    </p>
+    <p>
+        &nbsp;</p>
     <p>
             <asp:Label ID="Label6" runat="server" Font-Names="Consolas" Font-Size="20px" ForeColor="#412F6F" Text="Location :"></asp:Label>
         <asp:TextBox ID="txtLocation" runat="server" Height="22px" Width="166px"></asp:TextBox>
@@ -38,30 +66,11 @@
     <p>
         &nbsp;</p>
     <p>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:farmer %>" SelectCommand="SELECT * FROM [harvest_detail]"></asp:SqlDataSource>
-</p>
+        &nbsp;</p>
     <p>
         &nbsp;</p>
     <p>
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataSourceID="SqlDataSource1">
-            <Columns>
-                <asp:BoundField DataField="fname" HeaderText="fname" SortExpression="fname" />
-                <asp:BoundField DataField="details" HeaderText="details" SortExpression="details" />
-                <asp:BoundField DataField="location" HeaderText="location" SortExpression="location" />
-                <asp:ImageField DataImageUrlField="image" HeaderText="Images">
-                </asp:ImageField>
-            </Columns>
-            <FooterStyle BackColor="White" ForeColor="#000066" />
-            <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White" />
-            <PagerStyle BackColor="White" ForeColor="#000066" HorizontalAlign="Left" />
-            <RowStyle ForeColor="#000066" />
-            <SelectedRowStyle BackColor="#669999" Font-Bold="True" ForeColor="White" />
-            <SortedAscendingCellStyle BackColor="#F1F1F1" />
-            <SortedAscendingHeaderStyle BackColor="#007DBB" />
-            <SortedDescendingCellStyle BackColor="#CAC9C9" />
-            <SortedDescendingHeaderStyle BackColor="#00547E" />
-        </asp:GridView>
-    </p>
+        &nbsp;</p>
     <p>
     </p>
     <p>

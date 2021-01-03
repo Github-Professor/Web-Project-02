@@ -22,6 +22,10 @@ namespace Web_Project_02
             txtfname.Text = "";
             txtDetails.Text = "";
             txtLocation.Text = "";
+            txtVeg1.Text = "";
+            txtVeg2.Text = "";
+            txtVeg3.Text = "";
+            txtVeg4.Text = "";
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -45,15 +49,21 @@ namespace Web_Project_02
                     using (SqlConnection con = new SqlConnection(conStr))
                     {
                         con.Open();
-                        string queryStr = "INSERT INTO harvest_detail VALUES (@fname, @details, @location, @images)";
+                        string queryStr = "INSERT INTO harvest_detail VALUES (@fname, @details, @pumpkin, @chilli, @carrot, @onion ,@location, @images)";
                         using (SqlCommand cmd = new SqlCommand(queryStr, con))
                         {
                             cmd.Parameters.AddWithValue("fname", txtfname.Text);
                             cmd.Parameters.AddWithValue("details", txtDetails.Text);
+                            cmd.Parameters.AddWithValue("pumpkin", txtVeg1.Text);
+                            cmd.Parameters.AddWithValue("chilli", txtVeg2.Text);
+                            cmd.Parameters.AddWithValue("carrot", txtVeg3.Text);
+                            cmd.Parameters.AddWithValue("onion", txtVeg4.Text);
                             cmd.Parameters.AddWithValue("location", txtLocation.Text);
                             cmd.Parameters.AddWithValue("@images", pic);
 
                             cmd.ExecuteNonQuery();
+
+                            lblError.Text = "Upload Successful....!!";
                         }
                         con.Close();
                     }

@@ -2,41 +2,43 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div class="jumbotron">
-        <h1>ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-    </div>
+   
+    <p>
+        <br />
+    </p>
+    <p>
+            <asp:Label ID="Label7" runat="server" Font-Names="Consolas" Font-Size="40px" ForeColor="#412F6F" Text="Home"></asp:Label>
+    </p>
+    <p>
+        <asp:HyperLink ID="HyperLink1" runat="server" Font-Size="20px" NavigateUrl="~/Registration_Page.aspx">Farmer Registration</asp:HyperLink>
+    </p>
+    <p>
+        <asp:HyperLink ID="HyperLink2" runat="server" Font-Size="20px" NavigateUrl="~/kells.aspx">Kells Staff Registration</asp:HyperLink>
+    </p>
+    <p>
+        <asp:HyperLink ID="HyperLink3" runat="server" Font-Size="20px" NavigateUrl="~/DOA.aspx">DOA Registration</asp:HyperLink>
+    </p>
+    <p>
+        <asp:HyperLink ID="HyperLink4" runat="server" Font-Size="20px" NavigateUrl="~/Login.aspx">Log as a Farmer</asp:HyperLink>
+    </p>
+    <p>
+        <asp:HyperLink ID="HyperLink5" runat="server" Font-Size="20px" NavigateUrl="~/Registration_Page.aspx">Log as a Kells Staff Member</asp:HyperLink>
+    </p>
+    <p>
+        <asp:HyperLink ID="HyperLink6" runat="server" Font-Size="20px" NavigateUrl="~/Registration_Page.aspx">Log as a DOA Staff Member</asp:HyperLink>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
 
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Getting started</h2>
-            <p>
-                ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-            A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Get more libraries</h2>
-            <p>
-                NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Web Hosting</h2>
-            <p>
-                You can easily find a web hosting company that offers the right mix of features and price for your applications.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
-            </p>
-        </div>
-    </div>
-
+   
 </asp:Content>
