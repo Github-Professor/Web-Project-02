@@ -53,6 +53,9 @@ namespace Web_Project_02
                             cmd.Parameters.AddWithValue("password", txtPassword.Text);
 
                             cmd.ExecuteNonQuery();
+
+                            Response.Redirect("https://localhost:44304/Login");
+
                         }
                         con.Close();
                     }

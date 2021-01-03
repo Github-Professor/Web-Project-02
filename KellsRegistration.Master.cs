@@ -63,9 +63,9 @@ namespace Web_Project_02
                         con.Close();
                     }
                 }
-                catch (SqlException ex)
+                catch (SqlException)
                 {
-                    lblError.Text = "Sql Error Occured! " + ex;
+                    lblError.Text = "Username is already taken...!!";
                 }
                 catch (Exception ey)
                 {

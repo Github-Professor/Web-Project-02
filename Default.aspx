@@ -22,10 +22,10 @@
         <asp:HyperLink ID="HyperLink4" runat="server" Font-Size="20px" NavigateUrl="~/Login.aspx">Log as a Farmer</asp:HyperLink>
     </p>
     <p>
-        <asp:HyperLink ID="HyperLink5" runat="server" Font-Size="20px" NavigateUrl="~/Registration_Page.aspx">Log as a Kells Staff Member</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink5" runat="server" Font-Size="20px" NavigateUrl="~/LogKells.aspx">Log as a Kells Staff Member</asp:HyperLink>
     </p>
     <p>
-        <asp:HyperLink ID="HyperLink6" runat="server" Font-Size="20px" NavigateUrl="~/Registration_Page.aspx">Log as a DOA Staff Member</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink6" runat="server" Font-Size="20px" NavigateUrl="~/DOALog.aspx">Log as a DOA Staff Member</asp:HyperLink>
     </p>
     <p>
     </p>

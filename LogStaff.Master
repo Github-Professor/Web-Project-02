@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="LogStaff.master.cs" Inherits="Web_Project_02.LogStaff" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+  *,
+  *:before,
+  *:after {
+    color: #000 !important;
+    text-shadow: none !important;
+    background: transparent !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+  }
+  </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <p>
+            <asp:Label ID="Label4" runat="server" Font-Names="Consolas" Font-Size="30px" ForeColor="#412F6F" Text="Login Kells Staff" Font-Bold="True"></asp:Label>
+        </p>
+        <p>
+            <asp:Label ID="Label6" runat="server" Font-Names="Consolas" Font-Size="20px" ForeColor="#412F6F" Text="Username :"></asp:Label>
+            <asp:TextBox ID="txtUname" runat="server"></asp:TextBox>
+        </p>
+        <p>
+            <asp:Label ID="Label7" runat="server" Font-Names="Consolas" Font-Size="20px" ForeColor="#412F6F" Text="Password :"></asp:Label>
+            <asp:TextBox ID="txtPass" runat="server"></asp:TextBox>
+        </p>
+        <p>
+            <asp:Button ID="Button1" runat="server" Font-Size="20px" OnClick="Button1_Click" Text="Login" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="Button2" runat="server" Font-Size="20px" Height="35px" OnClick="Button2_Click" Text="Reset" />
+        </p>
+        <p>
+            <asp:Label ID="lblError" runat="server" Font-Names="Consolas" Font-Size="20px" ForeColor="Red"></asp:Label>
+        </p>
+        <p>
+            &nbsp;</p>
+    </form>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+</body>
+</html>

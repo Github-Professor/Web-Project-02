@@ -9,32 +9,27 @@ using System.Web.UI.WebControls;
 
 namespace Web_Project_02
 {
-    public partial class Login : System.Web.UI.Page
+    public partial class LogStaff : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void Button3_Click(object sender, EventArgs e)
-        {
-            txtPassword.Text = "";
-            txtID.Text = "";
-        }
-
         protected void Button2_Click(object sender, EventArgs e)
         {
-            string id = txtID.Text;
-            string password = txtPassword.Text;
+            txtPass.Text = "";
+            txtUname.Text = "";
+        }
 
-            if(txtID.Text.Equals("") || txtPassword.Text.Equals(""))
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            string uname = txtUname.Text;
+            string pass = txtPass.Text;
+
+            if(txtPass.Text.Equals("") || txtUname.Text.Equals(""))
             {
-                lblError.Text = "Please enter information....!!";
+                lblError.Text = "Please enter information..!!";
             }
             else
             {
@@ -44,29 +39,28 @@ namespace Web_Project_02
                     using (SqlConnection con = new SqlConnection(conStr))
                     {
                         con.Open();
-                        string queryStr = "SELECT * FROM farmer WHERE national_id = '" + id + "' AND password = '" + password + "'";
+                        string queryStr = "SELECT * FROM staff WHERE uname = '" + uname + "' AND pass = '" + pass + "'";
                         using (SqlCommand cmd = new SqlCommand(queryStr, con))
                         {
                             SqlDataReader sdr = cmd.ExecuteReader();
                             if (sdr.Read())
                             {
-                                Response.Redirect("https://localhost:44304/About");
+                                Response.Redirect("https://localhost:44304/ViewReports");
                             }
                             else
                             {
-                                lblError.Text = "National ID & Password Is not correct Try again..!!";
-
+                                lblError.Text = "Username & Password Is not correct Try again..!!";
                             }
                         }
                     }
                 }
                 catch (SqlException ex)
                 {
-                    lblError.Text = "Sql Error Occured! " + ex;
+                    lblError.Text = "Sql Error Occured..!! " + ex;
                 }
-                catch (Exception ee)
+                catch (Exception ey)
                 {
-                    lblError.Text = "Error Occured! " + ee;
+                    lblError.Text = "Error Occured..!! " + ey;
                 }
                 finally
                 {
@@ -75,6 +69,8 @@ namespace Web_Project_02
             }
 
             
+
+           
         }
     }
 }

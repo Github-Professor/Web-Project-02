@@ -133,6 +133,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="DOA.aspx" />
+    <Content Include="DOALog.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -146,8 +147,10 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="kells.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="LogKells.aspx" />
     <Content Include="RegistrationMasterPage.Master" />
     <Content Include="KellsRegistration.Master" />
+    <Content Include="LogStaff.Master" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Registration_Page.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -224,6 +227,13 @@
     <Compile Include="DOA.aspx.designer.cs">
       <DependentUpon>DOA.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DOALog.aspx.cs">
+      <DependentUpon>DOALog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DOALog.aspx.designer.cs">
+      <DependentUpon>DOALog.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -247,6 +257,20 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogKells.aspx.cs">
+      <DependentUpon>LogKells.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogKells.aspx.designer.cs">
+      <DependentUpon>LogKells.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogStaff.Master.cs">
+      <DependentUpon>LogStaff.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogStaff.Master.designer.cs">
+      <DependentUpon>LogStaff.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegistrationMasterPage.Master.cs">
