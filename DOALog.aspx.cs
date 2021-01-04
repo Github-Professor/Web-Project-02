@@ -45,7 +45,7 @@ namespace Web_Project_02
                             SqlDataReader sdr = cmd.ExecuteReader();
                             if (sdr.Read())
                             {
-                                Response.Redirect("https://localhost:44304/ViewReports");
+                                Response.Redirect("https://localhost:44304/ViewGraphReports");
                             }
                             else
                             {

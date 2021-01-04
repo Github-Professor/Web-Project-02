@@ -10,44 +10,52 @@
     <style type="text/css">
         .auto-style1 {
             text-align: center;
+            width: 563px;
+            height: 160px;
+        }
+        .auto-style2 {
+            text-align: left;
         }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-    <p style="text-align: center">
-        &nbsp;
+    <p style="text-align: center" class="auto-style2">
         <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Names="Book Antiqua" Font-Size="20pt" ForeColor="#660066" style="text-align: center" Text="View Details"></asp:Label>
         </p>
     <p>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
-    <p class="auto-style1">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Label ID="Label2" runat="server" Font-Names="Arial" Font-Size="14pt" ForeColor="#660066" Text="You can view all the details about the harvest which picked by the farmers from their field"></asp:Label>
+    <p class="auto-style2">
+        &nbsp;<asp:Label ID="Label2" runat="server" Font-Names="Arial" Font-Size="14pt" ForeColor="#660066" Text="You can view all the details about the harvest which picked by the farmers from their field"></asp:Label>
         </p>
     <p>
         &nbsp;</p>
     <p>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:farmer %>" SelectCommand="SELECT * FROM [harvest_detail]"></asp:SqlDataSource>
         </p>
+        <p>
+            <asp:HyperLink ID="HyperLink1" runat="server" Font-Size="30px" NavigateUrl="~/GoogleMap.aspx">Map Location</asp:HyperLink>
+        </p>
         <div class="auto-style1">
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataSourceID="SqlDataSource1" Width="563px">
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataSourceID="SqlDataSource1" Width="563px" AllowSorting="True" ForeColor="#333333" GridLines="None">
+                <AlternatingRowStyle BackColor="White" />
                 <Columns>
+                    <asp:CommandField ShowSelectButton="True" />
                     <asp:BoundField DataField="fname" HeaderText="fname" SortExpression="fname" />
                     <asp:BoundField DataField="details" HeaderText="details" SortExpression="details" />
                     <asp:BoundField DataField="location" HeaderText="location" SortExpression="location" />
                     <asp:ImageField DataImageUrlField="image" HeaderText="Images">
                     </asp:ImageField>
                 </Columns>
-                <FooterStyle BackColor="#99CCCC" ForeColor="#003399" />
-                <HeaderStyle BackColor="#003399" Font-Bold="True" ForeColor="#CCCCFF" />
-                <PagerStyle BackColor="#99CCCC" ForeColor="#003399" HorizontalAlign="Left" />
-                <RowStyle BackColor="White" ForeColor="#003399" />
-                <SelectedRowStyle BackColor="#009999" Font-Bold="True" ForeColor="#CCFF99" />
-                <SortedAscendingCellStyle BackColor="#EDF6F6" />
-                <SortedAscendingHeaderStyle BackColor="#0D4AC4" />
-                <SortedDescendingCellStyle BackColor="#D6DFDF" />
-                <SortedDescendingHeaderStyle BackColor="#002876" />
+                <FooterStyle BackColor="#990000" ForeColor="White" Font-Bold="True" />
+                <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
+                <PagerStyle BackColor="#FFCC66" ForeColor="#333333" HorizontalAlign="Center" />
+                <RowStyle BackColor="#FFFBD6" ForeColor="#333333" />
+                <SelectedRowStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="Navy" />
+                <SortedAscendingCellStyle BackColor="#FDF5AC" />
+                <SortedAscendingHeaderStyle BackColor="#4D0000" />
+                <SortedDescendingCellStyle BackColor="#FCF6C0" />
+                <SortedDescendingHeaderStyle BackColor="#820000" />
             </asp:GridView>
         </div>
         <br />

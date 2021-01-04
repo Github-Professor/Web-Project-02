@@ -88,12 +88,30 @@
         });
 
        
-        var infowindow = new google.maps.InfoWindow({
-            content: "Location : Gampaha <br/>Details : This is my first harvest..!! <br/>pumpkin : 1000 <br/>carrot : 1500 <br/> onion : 2000 <br/> chilli : 1000 <br/>"
+        var infowindow1 = new google.maps.InfoWindow({
+            content: "Location : Gampaha <br/>Details : This is my first harvest..!! <br/>pumpkin : 1000 <br/>carrot : 1500 <br/> onion : 2000 <br/> chilli : 2500 <br/>"
+        });
+        var infowindow2 = new google.maps.InfoWindow({
+            content: "Location : Gampaha <br/>Details : This is my second harvest..!! <br/>pumpkin : 2000 <br/>carrot : 2000 <br/> onion : 2000 <br/> chilli : 1000 <br/>"
+        });
+        var infowindow3 = new google.maps.InfoWindow({
+            content: "Location : Gampaha <br/>Details : This is my third harvest..!! <br/>pumpkin : 4000 <br/>carrot : 2000 <br/> onion : 2000 <br/> chilli : 2000 <br/>"
+        });
+        var infowindow4 = new google.maps.InfoWindow({
+            content: "Location : Gampaha <br/>Details : This is my fourth harvest..!! <br/>pumpkin : 5000 <br/>carrot : 100 <br/> onion : 2000 <br/> chilli : 3000 <br/>"
         });
 
-        google.maps.event.addListener(marker, 'click', function () {
-            infowindow.open(map, marker);
+        google.maps.event.addListener(marker1, 'click', function () {
+            infowindow1.open(map, marker1);
+        });
+        google.maps.event.addListener(marker2, 'click', function () {
+            infowindow2.open(map, marker2);
+        });
+        google.maps.event.addListener(marker3, 'click', function () {
+            infowindow3.open(map, marker3);
+        });
+        google.maps.event.addListener(marker4, 'click', function () {
+            infowindow4.open(map, marker4);
         });
 
 
@@ -115,6 +133,7 @@
 
 
         </div>
+        <asp:HyperLink ID="HyperLink1" runat="server" Font-Size="30px" NavigateUrl="~/kells.aspx">Go Back</asp:HyperLink>
     </form>
 </body>
 </html>
