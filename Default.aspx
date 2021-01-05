@@ -28,6 +28,7 @@
         <asp:HyperLink ID="HyperLink6" runat="server" Font-Size="20px" NavigateUrl="~/DOALog.aspx">Log as a DOA Staff Member</asp:HyperLink>
     </p>
     <p>
+        <asp:HyperLink ID="HyperLink7" runat="server" Font-Size="20px" NavigateUrl="~/ChatwithUs.html">Chat with Us</asp:HyperLink>
     </p>
     <p>
     </p>
