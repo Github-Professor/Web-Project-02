@@ -31,6 +31,9 @@
         <asp:HyperLink ID="HyperLink7" runat="server" Font-Size="20px" NavigateUrl="~/ChatwithUs.html">Chat with Us</asp:HyperLink>
     </p>
     <p>
+        <asp:HyperLink ID="HyperLink8" runat="server" Font-Size="20px" NavigateUrl="~/Graphs.aspx">Harvest Analysis</asp:HyperLink>
+    </p>
+    <p>
     </p>
     <p>
     </p>
