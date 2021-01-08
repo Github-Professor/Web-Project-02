@@ -71,6 +71,9 @@
                 </ChartAreas>
             </asp:Chart>
         </p>
+        <p>
+        <asp:HyperLink ID="HyperLink1" runat="server" Font-Size="30px" NavigateUrl="~/Default.aspx">Go Back</asp:HyperLink>
+        </p>
     </form>
 </body>
 </html>

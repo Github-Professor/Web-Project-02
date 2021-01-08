@@ -67,7 +67,7 @@
                 </asp:ChartArea>
             </ChartAreas>
         </asp:Chart>
-        <asp:HyperLink ID="HyperLink1" runat="server" Font-Size="30px" NavigateUrl="~/DOALog.aspx">Go Back</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink1" runat="server" Font-Size="30px" NavigateUrl="~/Default.aspx">Go Back</asp:HyperLink>
         <br />
         <br />
         <asp:GridView ID="GridView1" runat="server" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataSourceID="SqlDataSource1" GridLines="Horizontal">

@@ -9,7 +9,7 @@
     <title></title>
     <style type="text/css">
         .auto-style1 {
-            text-align: center;
+            text-align: left;
             width: 563px;
             height: 160px;
         }
@@ -57,6 +57,10 @@
                 <SortedDescendingCellStyle BackColor="#FCF6C0" />
                 <SortedDescendingHeaderStyle BackColor="#820000" />
             </asp:GridView>
+            <div class="auto-style2">
+                <br />
+        <asp:HyperLink ID="HyperLink2" runat="server" Font-Size="30px" NavigateUrl="~/Default.aspx">Go Back</asp:HyperLink>
+            </div>
         </div>
         <br />
         <br />
