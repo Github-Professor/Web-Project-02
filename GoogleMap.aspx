@@ -92,13 +92,13 @@
             content: "Location : Gampaha <br/>Details : This is my first harvest..!! <br/>pumpkin : 1000 <br/>carrot : 1500 <br/> onion : 2000 <br/> chilli : 2500 <br/>"
         });
         var infowindow2 = new google.maps.InfoWindow({
-            content: "Location : Gampaha <br/>Details : This is my second harvest..!! <br/>pumpkin : 2000 <br/>carrot : 2000 <br/> onion : 2000 <br/> chilli : 1000 <br/>"
+            content: "Location : Colombo <br/>Details : This is my second harvest..!! <br/>pumpkin : 2000 <br/>carrot : 2000 <br/> onion : 2000 <br/> chilli : 1000 <br/>"
         });
         var infowindow3 = new google.maps.InfoWindow({
-            content: "Location : Gampaha <br/>Details : This is my third harvest..!! <br/>pumpkin : 4000 <br/>carrot : 2000 <br/> onion : 2000 <br/> chilli : 2000 <br/>"
+            content: "Location : Homagama <br/>Details : This is my third harvest..!! <br/>pumpkin : 4000 <br/>carrot : 2000 <br/> onion : 2000 <br/> chilli : 2000 <br/>"
         });
         var infowindow4 = new google.maps.InfoWindow({
-            content: "Location : Gampaha <br/>Details : This is my fourth harvest..!! <br/>pumpkin : 5000 <br/>carrot : 100 <br/> onion : 2000 <br/> chilli : 3000 <br/>"
+            content: "Location : Kandy <br/>Details : This is my fourth harvest..!! <br/>pumpkin : 5000 <br/>carrot : 100 <br/> onion : 2000 <br/> chilli : 3000 <br/>"
         });
 
         google.maps.event.addListener(marker1, 'click', function () {
