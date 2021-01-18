@@ -4,12 +4,14 @@
     <meta charset="utf-8" />
     <title>Chat_with_Us</title>
 </head>
-<body>
+<body style="background-image: url('Chat.jpg');background-size: cover; background-repeat:no-repeat;">
+    <div style="text-align: center;">
     <h1>~Chat with us~</h1>
-    <p>*Please enter what you want to ask from us!!!</p>
+    <p style="font-size:25px;">Please enter what you want to ask from us!!!</p>
     <input type="text" id="message" />
     <input type="button" id="sendmessage" value="Send" />
     <input type="hidden" id="displayname" />
+    </div>
     <ul id="discussion"></ul>
     <script src="Scripts/jquery-3.4.1.min.js"></script>
     <script src="Scripts/jquery.signalR-2.2.2.min.js"></script>
